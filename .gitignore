@@ -25,6 +25,3 @@ go.work
 *.swp
 *.swo
 *~
-
-# OS
-.DS_Store

@@ -1,6 +1,6 @@
-module github.com/anankix/anankix
+module github.com/codenbase/operator-mode
 
-go 1.22.0
+go 1.25.1
 
 require (
 	github.com/onsi/ginkgo/v2 v2.19.0
