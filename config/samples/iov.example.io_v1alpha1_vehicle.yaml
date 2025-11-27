@@ -1,0 +1,9 @@
+apiVersion: iov.example.io.coden.io/v1alpha1
+kind: Vehicle
+metadata:
+  labels:
+    app.kubernetes.io/name: coden
+    app.kubernetes.io/managed-by: kustomize
+  name: vehicle-sample
+spec:
+  # TODO(user): Add fields here

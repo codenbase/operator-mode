@@ -1,0 +1,4 @@
+## Append samples of your project ##
+resources:
+- iov.example.io_v1alpha1_vehicle.yaml
+# +kubebuilder:scaffold:manifestskustomizesamples

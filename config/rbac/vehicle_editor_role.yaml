@@ -1,8 +1,11 @@
----
+# permissions for end users to edit vehicles.
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
-  name: manager-role
+  labels:
+    app.kubernetes.io/name: coden
+    app.kubernetes.io/managed-by: kustomize
+  name: vehicle-editor-role
 rules:
 - apiGroups:
   - iov.example.io.coden.io
@@ -19,14 +22,6 @@ rules:
 - apiGroups:
   - iov.example.io.coden.io
   resources:
-  - vehicles/finalizers
-  verbs:
-  - update
-- apiGroups:
-  - iov.example.io.coden.io
-  resources:
   - vehicles/status
   verbs:
   - get
-  - patch
-  - update
