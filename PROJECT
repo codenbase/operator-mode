@@ -7,7 +7,7 @@ domain: my.domain
 layout:
 - go.kubebuilder.io/v4
 projectName: operator-mode
-repo: github.com/codenbase/operator-mode
+repo: my.domain/guestbook
 resources:
 - api:
     crdVersion: v1
@@ -16,6 +16,6 @@ resources:
   domain: my.domain
   group: webapp
   kind: Guestbook
-  path: github.com/codenbase/operator-mode/api/v1
+  path: my.domain/guestbook/api/v1
   version: v1
 version: "3"
